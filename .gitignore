@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io
 
+/price_data_exercise/hive/metastore_db
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
