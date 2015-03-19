@@ -9,7 +9,7 @@ object price_data {
     val conf = new SparkConf().setAppName("PriceDataExercise")
     val sc = new SparkContext(conf)
 
-    val file = sc.textFile("hdfs://localhost:9000/user/price_data_full")
+    val file = sc.textFile("hdfs://localhost:9000/user/price_data_snippet")
 
     val prices = file.map(line => { val record = line.split(";")
 				    (record(0), record(1).toDouble, record(2).toInt) 
@@ -32,7 +32,7 @@ object price_data {
 				     .sortByKey()
 				     .map(record => (record._1, record._2._1, record._2._2))
 
-    price_vol_30min.saveAsTextFile("hdfs://localhost:9000/user/price_data_full_scala")
+    price_vol_30min.saveAsTextFile("hdfs://localhost:9000/user/price_data_snippet_scala")
     
   }
 
