@@ -3,6 +3,7 @@
 Implements an a Map Reduce job in Spark, Pig, and Hive
 
 Tasks:
+
 1) Install Hadoop 2.4+
 
 2) Install Pig, Hive, and Spark
