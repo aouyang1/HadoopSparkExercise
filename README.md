@@ -2,12 +2,15 @@
 
 The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. The data set is commodity price data structured as so:
 
-Column definition: Timestamp;Price;Volume\n
+Column definition: Timestamp, Price, Volume
 
 Timestamp string format: yyyymmdd HHMMSS
 
 ![price_data_snippet] (images/price_data_snippet.png)
 
+The task is to implement in the various frameworks average price and total volume in 30 minute increments. Output should look like the following:
+
+![min30_output] (images/min30_output.png)
 
 Tasks:
 
