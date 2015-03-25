@@ -100,17 +100,17 @@ $ hive -f price_data.sql
 
 - Spark
   - file hierarchy setup
-```
-project.sbt
-src
- -> main
-      -> scala
-            -> price_data.scala
-```
-    - compile with sbt
-```
-$ sbt package
-```
+    ```
+    project.sbt
+    src
+     -> main
+          -> scala
+                -> price_data.scala
+    ```
+  - compile with sbt
+    ```
+    $ sbt package
+    ```
 
   - jar file will reside in target/scala-2.10
   - Run with the following command:
