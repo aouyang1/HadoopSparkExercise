@@ -130,13 +130,13 @@ project
   - Run with the following command:
     
     ```
-    $ spark-submit --class "price_data" --master local[4] target/scala-2.10/price_data_2.10-1.0.jar
+    $ spark-submit --class "price_data" --master local[8] target/scala-2.10/price_data_2.10-1.0.jar
     ```
 
 
 ## 8. Compare results and benchmark
-670 MB file
-|-----|--------|
-|Pig  |3m15.53s|
-|Hive |1m20.77s|
-|Spark|0m39.73s|
+
+|File Size|Pig     |Hive    |Spark   |
+|---------|--------|--------|--------|
+|1.7MB    |0m10.46s|0m11.12s|0m05.60s|
+|670MB    |3m15.53s|1m20.77s|0m39.73s|
