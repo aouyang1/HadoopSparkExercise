@@ -8,7 +8,7 @@ Timestamp string format: yyyymmdd HHMMSS
 
 ![price_data_snippet] (images/price_data_snippet.png)
 
-The task is to implement in the various frameworks average price and total volume in 30 minute increments. Output should look like the following:
+The task is to implement in the various frameworks the average price and total volume for each 30 minute increment. Output should look like the following:
 
 ![min30_output] (images/min30_output.png)
 
@@ -19,10 +19,9 @@ Tasks:
 3. [Install Hive 1.1.0](README.md#3-install-hive-110)
 4. [Install Spark 1.3.0](README.md#4-install-spark-130)
 5. [Add environment variables](README.md#5-add-environment-variables)
-5. [Copy price data to Hadoop Data File System (HDFS)]
-6. [Write a Pig, Hive, and Spark job]
-7. [Write results back into HDFS]
-8. [Compare results and benchmark]
+6. [Copy data to HDFS](README.md#6-copy-data-to-hdfs)
+7. [Write jobs](README.md#7-write-jobs)
+8. [Compare results and benchmark](README.md#8-compare-results-and-benchmark)
 
 ## 1. Install Hadoop 2.6
     
@@ -60,6 +59,8 @@ Be sure to set the scripts as executables
 
 ## 5. Add environment variables
 Add to ~/.bashrc
+
+![bashrc](images/bashrc.png)
 
     $ source ~/.bashrc
   
