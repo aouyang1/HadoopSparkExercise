@@ -136,6 +136,6 @@ project
 
 ## 8. Compare results and benchmark
 670 MB file
--   Pig: 3m15.53s 
--  Hive: 1m20.77s
-- Spark: 0m39.73s
+|Pig  |3m15.53s|
+|Hive |1m20.77s|
+|Spark|0m39.73s|
