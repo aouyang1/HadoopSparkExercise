@@ -57,15 +57,17 @@ Be sure to set the scripts as executables
     $ wget http://www.apache.org/dyn/closer.cgi/spark/spark-1.3.0/spark-1.3.0-bin-hadoop2.4.tgz
     $ tar -zxvf spark-1.3.0-bin-hadoop2.4.tgz -C /usr/local
 
+Use the [Insight Spark dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/spark-dev) to complete setup
+
 ## 5. Add environment variables
 Add to ~/.bashrc
 
 ![bashrc](images/bashrc.png)
 
     $ source ~/.bashrc
-  
-## 6. Write a Pig, Hive, and Spark job
 
-## 7. Write results back into HDFS
+## 6. Copy data to HDFS
+
+## 7. Write jobs
 
 ## 8. Compare results and benchmark
