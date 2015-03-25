@@ -138,7 +138,14 @@ project
 
 ## 8. Compare results and benchmark
 
-|File Size|Pig     |Hive    |Spark   |
-|---------|--------|--------|--------|
-|1.7MB    |0m10.46s|0m11.12s|0m05.60s|
-|670MB    |3m15.53s|1m20.77s|0m39.73s|
+Personal benchmark run locally on i7 with 8GB RAM and 250GB SSD
+
+|File Group        |File Size|Pig     |Hive    |Spark   |
+|:----------------:|:-------:|:------:|:------:|:------:|
+|price_data_snippet|1.7MB    |0m10.46s|0m11.12s|0m05.60s|
+|price_data_full   |670MB    |3m15.53s|1m20.77s|0m39.73s|
+
+Things to consider:
+- ease of implementation
+- code length
+- speed
