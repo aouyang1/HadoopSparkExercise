@@ -18,7 +18,7 @@ Tasks:
 http://mirror.nexcess.net/apache/hadoop/common/stable/hadoop-2.6.0.tar.gz 
 tar -zxvf hadoop-2.6.0.tar.gz -C /usr/local
 ```
-change JAVA_HOME environment variable in /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+change JAVA_HOME environment variable in /usr/local/hadoop-2.6.0/etc/hadoop/hadoop-env.sh
 ```
 export JAVA_HOME=/usr
 ```
@@ -38,21 +38,20 @@ wget http://www.apache.org/dyn/closer.cgi/spark/spark-1.3.0/spark-1.3.0-bin-hado
 tar -zxvf spark-1.3.0-bin-hadoop2.4.tgz -C /usr/local
 ```
 
+# Add to ~/.bashrc
 ```
-~/.bashrc
-
 export JAVA_HOME=/usr/bin/java
 export PATH=$PATH:$JAVA_HOME
 
-export HADOOP_HOME=/usr/local/hadoop
+export HADOOP_HOME=/usr/local/hadoop-2.6.0
 export PATH=$PATH:$HADOOP_HOME/bin
 
-export SPARK_HOME=/usr/local/spark
-export PATH=$PATH:$SPARK
+export PIG_HOME=/usr/local/pig-0.14.0
+export PATH=$PATH:$PIG_HOME/bin
 
-export HIVE_HOME=/usr/local/hive
+export HIVE_HOME=/usr/local/apache-hive-1.1.0-bin
 export PATH=$PATH:$HIVE_HOME/bin
 
-export PIG_HOME=/usr/local/pig
-export PATH=$PATH:$PIG_HOME/bin
+export SPARK_HOME=/usr/local/spark-1.3.0-bin-hadoop2.4
+export PATH=$PATH:$SPARK
 ```
