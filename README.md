@@ -16,12 +16,10 @@ Tasks:
 
 ## 1. Install Hadoop 2.6
     
-[Hadoop dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/hadoop)
-
     $ wget http://mirror.nexcess.net/apache/hadoop/common/stable/hadoop-2.6.0.tar.gz
     $ tar -zxvf hadoop-2.6.0.tar.gz -C /usr/local
-
-change JAVA_HOME environment variable in /usr/local/hadoop-2.6.0/etc/hadoop/hadoop-env.sh
+    
+After extraction, go to [Insight Hadoop dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/hadoop) to setup Hadoop and HDFS
 
 ## 2. Install Pig 0.14
 
