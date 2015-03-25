@@ -11,7 +11,7 @@ Tasks:
 7. [Write jobs](README.md#7-write-jobs)
 8. [Compare results and benchmark](README.md#8-compare-results-and-benchmark)
 
-The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. Solutions are provided, but it is best if you work through each implementation on your own and/or with your fellows. The data set is commodity price data structured as so:
+The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. Fellows should consider the advantages and disadvantages of these frameworks. Solutions are provided, but it is best if fellows work through each implementation on their own and/or with other fellows. The data set used for this exercise is commodity price data from September 2013 to December 2014. Each row contains the last price the commodity was traded at. Timestamps are in UTC time.  
 
 Column definition: Timestamp, Price, Volume
 
