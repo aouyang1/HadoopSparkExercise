@@ -19,6 +19,8 @@ Timestamp string format: yyyymmdd HHMMSS
 
 ![price_data_snippet] (images/price_data_snippet.png)
 
+The full dataset can be downloaded from [Google Drive](https://drive.google.com/folderview?id=0B9BcjDEfpflMfnFlUVQtSDIzT0FxbzNkSFF1OWptQkpQTVpfRlJnSU45VHY3X0hLdDQ0clE&usp=sharing)
+
 The task is to implement in the various frameworks the average price and total volume for each 30 minute increment. Output should look like the following:
 
 ![min30_output] (images/min30_output.png)
