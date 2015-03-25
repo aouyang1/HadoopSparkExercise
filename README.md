@@ -2,6 +2,11 @@
 
 The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. The data set is commodity price data structured as so:
 
+[Timestamp];[Price];[Volume]
+
+![price_data_snippet] (images/price_data_snippet.png)
+
+
 Tasks:
 
 1. [Install Hadoop 2.6](README.md#1-install-hadoop-26)
@@ -25,7 +30,7 @@ Since HDFS is shutdown each time on a local machine, the following bash scripts 
 
 - start_hdfs.sh: starts HDFS (modify as needed)
 - load_hdfs.sh: loads data into HDFS (modify as needed)
-- clear_hdfs.sh: clears data from HDFS ((modify as needed)
+- clear_hdfs.sh: clears data from HDFS since overwriting will result in an error (modify as needed)
 
 Be sure to set the scripts as executables
 
