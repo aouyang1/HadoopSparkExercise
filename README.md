@@ -15,8 +15,12 @@ The purpose of this exercise is to implement a map reduce job across both a Hado
 
 Column definition: Timestamp, Price, Volume
 
-Timestamp string format: "yyyymmdd HHMMSS"
-                         "20140601 220315"
+Timestamp string format: 
+
+```
+"yyyymmdd HHMMSS"
+"20140601 220315"
+```
 
 ![price_data_snippet] (images/price_data_snippet.png)
 
