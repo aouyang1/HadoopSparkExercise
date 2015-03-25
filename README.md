@@ -28,6 +28,7 @@ Since HDFS is shutdown each time on a local machine, the following bash scripts 
 - clear_hdfs.sh: clears data from HDFS ((modify as needed)
 
 Be sure to set the scripts as executables
+
     $ sudo chmod +x start_hdfs.sh
     $ sudo chmod +x load_hdfs.sh
     $ sudo chmod +x clear_hdfs.sh
