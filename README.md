@@ -90,6 +90,7 @@ Hadoop/Spark hints
     $ pig -x mapreduce price_data.pig
     ```
 
+
 - Hive
   - Create a table
   - Use concat, substr, if for string manipulations
@@ -98,12 +99,14 @@ Hadoop/Spark hints
     $ hive -f price_data.sql
     ```
 
+
 - Spark
   - file hierarchy setup
     ```
     project.sbt
     src/main/scala/price_data.scala
     ```
+  
   - compile with sbt
     ```
     $ sbt package
@@ -114,5 +117,6 @@ Hadoop/Spark hints
     ```
     $ spark-submit --class "price_data" --master local[4] target/scala-2.10/price_data_2.10-1.0.jar
     ```
+
 
 ## 8. Compare results and benchmark
