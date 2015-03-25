@@ -18,6 +18,10 @@ Tasks:
 http://mirror.nexcess.net/apache/hadoop/common/stable/hadoop-2.6.0.tar.gz 
 tar -zxvf hadoop-2.6.0.tar.gz -C /usr/local
 ```
+change JAVA_HOME environment variable in /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+```
+export JAVA_HOME=/usr
+```
 # Pig installation
 ```
 wget http://psg.mtu.edu/pub/apache/pig/pig-0.14.0/pig-0.14.0-src.tar.gz 
