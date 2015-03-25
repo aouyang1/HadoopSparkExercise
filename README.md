@@ -2,9 +2,9 @@
 
 The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. The data set is commodity price data structured as so:
 
-Timestamp;Price;Volume
+Column definition: Timestamp;Price;Volume\n
 
-Timestamp: yyyymmdd HHMMSS
+Timestamp string format: yyyymmdd HHMMSS
 
 ![price_data_snippet] (images/price_data_snippet.png)
 
