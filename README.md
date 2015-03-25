@@ -107,7 +107,7 @@ src
       -> scala
             -> price_data.scala
 ```
-  - compile with sbt
+    - compile with sbt
 ```
 $ sbt package
 ```
