@@ -7,6 +7,7 @@ Tasks:
 2. [Install Pig 0.14](README.md#2-install-pig)
 3. [Install Hive 1.1.0](README.md#3-install-hive)
 4. [Install Spark 1.3.0](README.md#3-install-spark)
+
 5. [Copy price data to Hadoop Data File System (HDFS)]
 6. [Write a Pig, Hive, and Spark job]
 7. [Write results back into HDFS]
