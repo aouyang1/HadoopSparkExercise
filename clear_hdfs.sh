@@ -15,3 +15,8 @@ hdfs dfs -rm /user/aouyang1/price_data_full_pig/*
 hdfs dfs -rmdir /user/aouyang1/price_data_full_pig
 hdfs dfs -rmdir /user/aouyang1
 
+# remove hive outputs
+hdfs dfs -rm /user/price_data_snippet_hive/*
+hdfs dfs -rmdir /user/price_data_snippet_hive
+hdfs dfs -rm /user/price_data_full_hive/*
+hdfs dfs -rmdir /user/price_data_full_hive

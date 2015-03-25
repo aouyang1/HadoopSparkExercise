@@ -1,3 +1,4 @@
+DROP TABLE price_data;
 
 CREATE EXTERNAL TABLE IF NOT EXISTS price_data ( time string, price double, volume int) 
 ROW FORMAT DELIMITED FIELDS TERMINATED BY "\073" LINES TERMINATED BY "\n" 
