@@ -1,19 +1,18 @@
-# InsightDataEngExamples
+# Hadoop and Spark Comparison
 
-Implements an a Map Reduce job in Spark, Pig, and Hive
+The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. The data set is commodity 
 
 Tasks:
-
-1. Install Hadoop 2.4+
-2. Install Pig
+1. [Install Hadoop 2.6](README.md#1-install-hadoop)
+2. [Install Pig 0.14]
 3. Install Hive
 4. Install Spark
-5. Place price_data_snippet.txt onto HDFS
+5. Copy price data to Hadoop Data File System (HDFS)
 6. Write a Pig, Hive, and Spark job to compute the average price and total volume in 30 minute increments
 7. Write results back into HDFS
-8. Use hdfs dfs -cat to compare results
+8. Compare results and benchmark
 
-# Hadoop installation
+# 1. Install Hadoop 2.6
 ```
 http://mirror.nexcess.net/apache/hadoop/common/stable/hadoop-2.6.0.tar.gz 
 tar -zxvf hadoop-2.6.0.tar.gz -C /usr/local
@@ -22,7 +21,7 @@ change JAVA_HOME environment variable in /usr/local/hadoop-2.6.0/etc/hadoop/hado
 ```
 export JAVA_HOME=/usr
 ```
-# Pig installation
+# 2. Install Pig 0.14
 ```
 wget http://psg.mtu.edu/pub/apache/pig/pig-0.14.0/pig-0.14.0-src.tar.gz 
 tar -zxvf pig-0.14.0-src.tar.gz -C /usr/local
