@@ -8,7 +8,7 @@ Tasks:
 2. [Install Pig 0.14](README.md#2-install-pig)
 3. [Install Hive 1.1.0](README.md#3-install-hive)
 4. [Install Spark 1.3.0](README.md#4-install-spark)
-
+5. [Add environment variables](README.md#5-add-environment)
 5. [Copy price data to Hadoop Data File System (HDFS)]
 6. [Write a Pig, Hive, and Spark job]
 7. [Write results back into HDFS]
@@ -38,8 +38,8 @@ tar -zxvf apache-hive-1.1.0-bin.tar.gz -C /usr/local
 wget http://www.apache.org/dyn/closer.cgi/spark/spark-1.3.0/spark-1.3.0-bin-hadoop2.4.tgz
 tar -zxvf spark-1.3.0-bin-hadoop2.4.tgz -C /usr/local
 ```
-
-## Add to ~/.bashrc
+## 5. Add environment variables
+### Add to ~/.bashrc
 ```
 export JAVA_HOME=/usr/bin/java
 export PATH=$PATH:$JAVA_HOME
@@ -56,5 +56,7 @@ export PATH=$PATH:$HIVE_HOME/bin
 export SPARK_HOME=/usr/local/spark-1.3.0-bin-hadoop2.4
 export PATH=$PATH:$SPARK
 ```
-
-## $ source ~/.bashrc
+### $ source ~/.bashrc
+## 6. [Write a Pig, Hive, and Spark job]
+## 7. [Write results back into HDFS]
+## 8. [Compare results and benchmark]
