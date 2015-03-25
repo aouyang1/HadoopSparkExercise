@@ -83,6 +83,23 @@ Load data onto HDFS
 4. Write output to HDFS
 
 Hadoop/Spark hints
+- file hierarchy setup
+
+```
+project
+     -> pig
+         -> price_data.pig
+         -> string_manip.py
+     -> hive
+         -> price_data.sql
+     -> spark
+           -> project.sbt
+           -> src
+               -> main
+                    -> scala
+                          -> price_data.scala
+```
+
 - Pig
   - Use UDFs for string manipulations
   - Run with the following command:
@@ -103,16 +120,6 @@ Hadoop/Spark hints
 
 
 - Spark
-  - file hierarchy setup
-    
-    ```
-    project.sbt
-    src
-     -> main
-          -> scala
-                -> price_data.scala
-    ```
-  
   - compile with sbt
     
     ```
