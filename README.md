@@ -21,6 +21,17 @@ Tasks:
     
 After extraction, go to [Insight Hadoop dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/hadoop) to setup Hadoop and HDFS
 
+Since HDFS is shutdown each time on a local machine, the following bash scripts can be used to start HDFS, load and clear data in HDFS:
+
+- start_hdfs.sh: starts HDFS (modify as needed)
+- load_hdfs.sh: loads data into HDFS (modify as needed)
+- clear_hdfs.sh: clears data from HDFS ((modify as needed)
+
+Be sure to set the scripts as executables
+    $ sudo chmod +x start_hdfs.sh
+    $ sudo chmod +x load_hdfs.sh
+    $ sudo chmod +x clear_hdfs.sh
+
 ## 2. Install Pig 0.14
 
     $ wget http://psg.mtu.edu/pub/apache/pig/pig-0.14.0/pig-0.14.0-src.tar.gz 
