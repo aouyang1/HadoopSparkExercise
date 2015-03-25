@@ -11,7 +11,7 @@ Tasks:
 7. [Write jobs](README.md#7-write-jobs)
 8. [Compare results and benchmark](README.md#8-compare-results-and-benchmark)
 
-The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. The data set is commodity price data structured as so:
+The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. Solutions are provided, but it is best if you work through each implementation on your own and/or with your fellows. The data set is commodity price data structured as so:
 
 Column definition: Timestamp, Price, Volume
 
@@ -29,18 +29,6 @@ The task is to implement in the various frameworks the average price and total v
     $ tar -zxvf hadoop-2.6.0.tar.gz -C /usr/local
     
 After extraction, go to [Insight Hadoop dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/hadoop) to setup Hadoop and HDFS
-
-Since HDFS is shutdown each time on a local machine, the following bash scripts can be used to start HDFS, load and clear data in HDFS:
-
-- start_hdfs.sh: starts HDFS (modify as needed)
-- load_hdfs.sh: loads data into HDFS (modify as needed)
-- clear_hdfs.sh: clears data from HDFS since overwriting will result in an error (modify as needed)
-
-Be sure to set the scripts as executables
-
-    $ sudo chmod +x start_hdfs.sh
-    $ sudo chmod +x load_hdfs.sh
-    $ sudo chmod +x clear_hdfs.sh
 
 ## 2. Install Pig 0.14
 
@@ -68,12 +56,19 @@ Add to ~/.bashrc
 
 ## 6. Setup HDFS
 
-On local machine start up, reformat HDFS
+Since HDFS is shutdown each time on a local machine, the following bash scripts can be used to start HDFS, load and clear data in HDFS:
+
+- start_hdfs.sh: starts HDFS (modify as needed)
+- load_hdfs.sh: loads data into HDFS (modify as needed)
+- clear_hdfs.sh: clears data from HDFS since overwriting will result in an error (modify as needed)
+
+Be sure to set the scripts as executables
+
+    $ sudo chmod +x start_hdfs.sh load_hdfs.sh clear_hdfs.sh
+    
+On each local machine start up run the following:
 
     $ ./start_hdfs.sh
-    
-Load data onto HDFS
-
     $ ./load_hdfs.sh
     
 ## 7. Write jobs
@@ -83,7 +78,7 @@ Load data onto HDFS
 4. Write output to HDFS
 
 Hadoop/Spark hints
-- file hierarchy setup
+- File hierarchy setup
 
 ```
 project
@@ -120,7 +115,7 @@ project
 
 
 - Spark
-  - compile with sbt
+  - Compile with sbt
     
     ```
     $ sbt package
