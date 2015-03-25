@@ -1,6 +1,6 @@
 # Hadoop and Spark Comparison
 
-The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. The data set is commodity 
+The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. The data set is commodity price data structured as so:
 
 Tasks:
 
@@ -20,9 +20,7 @@ Tasks:
   $ tar -zxvf hadoop-2.6.0.tar.gz -C /usr/local
 
 change JAVA_HOME environment variable in /usr/local/hadoop-2.6.0/etc/hadoop/hadoop-env.sh
-```
-export JAVA_HOME=/usr
-```
+
 ## 2. Install Pig 0.14
 
   $ wget http://psg.mtu.edu/pub/apache/pig/pig-0.14.0/pig-0.14.0-src.tar.gz 
@@ -40,23 +38,11 @@ export JAVA_HOME=/usr
 
 ## 5. Add environment variables
 Add to ~/.bashrc
-```
-export JAVA_HOME=/usr/bin/java
-export PATH=$PATH:$JAVA_HOME
 
-export HADOOP_HOME=/usr/local/hadoop-2.6.0
-export PATH=$PATH:$HADOOP_HOME/bin
-
-export PIG_HOME=/usr/local/pig-0.14.0
-export PATH=$PATH:$PIG_HOME/bin
-
-export HIVE_HOME=/usr/local/apache-hive-1.1.0-bin
-export PATH=$PATH:$HIVE_HOME/bin
-
-export SPARK_HOME=/usr/local/spark-1.3.0-bin-hadoop2.4
-export PATH=$PATH:$SPARK
-```
   $ source ~/.bashrc
-## 6. [Write a Pig, Hive, and Spark job]
-## 7. [Write results back into HDFS]
-## 8. [Compare results and benchmark]
+  
+## 6. Write a Pig, Hive, and Spark job
+
+## 7. Write results back into HDFS
+
+## 8. Compare results and benchmark
