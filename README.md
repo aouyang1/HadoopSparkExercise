@@ -82,8 +82,27 @@ Load data onto HDFS
 3. Compute average price for each time interval
 4. Write output to HDFS
 
+Hadoop/Spark hints
 - Pig
-- Hive
-- Spark
+  - Use UDFs for string manipulations
 
+    $ pig -x mapreduce price_data.pig
+
+- Hive
+  - Create a table
+  - Use concat, substr, if for string manipulations
+- Spark
+  - file hierarchy setup
+```
+project.sbt
+src
+ -> main
+      -> scala
+            -> price_data.scala
+```
+compile with sbt
+    
+    $ sbt package
+
+jar file will reside in target/scala-2.10
 ## 8. Compare results and benchmark
