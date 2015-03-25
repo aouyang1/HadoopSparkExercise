@@ -19,7 +19,7 @@ object price_data {
 					       val min30 = ts.slice(11,13).toInt/30*30
 					       ts.take(11) + f"${min30}%02d" + "00" } , 
 					     record._2, 
-					     record._3) )
+					     record._3) ).persist
 
     val price_30min = prices30min.map(record => (record._1, (record._2, 1)) )
 				 .reduceByKey( (x, y) => (x._1 + y._1, x._2 + y._2) )
