@@ -86,17 +86,17 @@ Hadoop/Spark hints
 - Pig
   - Use UDFs for string manipulations
   - Run with the following command:
-
-
-    $ pig -x mapreduce price_data.pig
+```
+$ pig -x mapreduce price_data.pig
+```
 
 - Hive
   - Create a table
   - Use concat, substr, if for string manipulations
   - Run with the following command:
-
-
-    $ hive -f price_data.sql
+```
+$ hive -f price_data.sql
+```
 
 - Spark
   - file hierarchy setup
@@ -108,15 +108,14 @@ src
             -> price_data.scala
 ```
   - compile with sbt
-
-
-    $ sbt package
+```
+$ sbt package
+```
 
   - jar file will reside in target/scala-2.10
   - Run with the following command:
-
-
-    $ spark-submit --class "price_data" --master local[4] target/scala-2.10/price_data_2.10-1.0.jar
-
+```
+$ spark-submit --class "price_data" --master local[4] target/scala-2.10/price_data_2.10-1.0.jar
+```
 
 ## 8. Compare results and benchmark
