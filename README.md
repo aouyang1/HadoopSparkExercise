@@ -7,7 +7,7 @@ Tasks:
 3. [Install Hive 1.1.0](README.md#3-install-hive-110)
 4. [Install Spark 1.3.0](README.md#4-install-spark-130)
 5. [Add environment variables](README.md#5-add-environment-variables)
-6. [Setup HDFS](README.md#6-setup-hdfs)
+6. [Start HDFS](README.md#6-start-hdfs)
 7. [Write jobs](README.md#7-write-jobs)
 8. [Compare results and benchmark](README.md#8-compare-results-and-benchmark)
 
@@ -56,7 +56,7 @@ Add to ~/.bashrc
 
     $ source ~/.bashrc
 
-## 6. Setup HDFS
+## 6. Start HDFS
 
 Since HDFS is shutdown each time on a local machine, the following bash scripts can be used to start HDFS, load and clear data in HDFS:
 
