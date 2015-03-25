@@ -1,5 +1,16 @@
 # Hadoop and Spark Comparison
 
+Tasks:
+
+1. [Install Hadoop 2.6](README.md#1-install-hadoop-26)
+2. [Install Pig 0.14](README.md#2-install-pig-014)
+3. [Install Hive 1.1.0](README.md#3-install-hive-110)
+4. [Install Spark 1.3.0](README.md#4-install-spark-130)
+5. [Add environment variables](README.md#5-add-environment-variables)
+6. [Setup HDFS](README.md#6-setup-hdfs)
+7. [Write jobs](README.md#7-write-jobs)
+8. [Compare results and benchmark](README.md#8-compare-results-and-benchmark)
+
 The purpose of this exercise is to implement a map reduce job across both a Hadoop and Spark framework. The data set is commodity price data structured as so:
 
 Column definition: Timestamp, Price, Volume
@@ -11,17 +22,6 @@ Timestamp string format: yyyymmdd HHMMSS
 The task is to implement in the various frameworks the average price and total volume for each 30 minute increment. Output should look like the following:
 
 ![min30_output] (images/min30_output.png)
-
-Tasks:
-
-1. [Install Hadoop 2.6](README.md#1-install-hadoop-26)
-2. [Install Pig 0.14](README.md#2-install-pig-014)
-3. [Install Hive 1.1.0](README.md#3-install-hive-110)
-4. [Install Spark 1.3.0](README.md#4-install-spark-130)
-5. [Add environment variables](README.md#5-add-environment-variables)
-6. [Setup HDFS](README.md#6-setup-hdfs)
-7. [Write jobs](README.md#7-write-jobs)
-8. [Compare results and benchmark](README.md#8-compare-results-and-benchmark)
 
 ## 1. Install Hadoop 2.6
     
@@ -73,10 +73,17 @@ On local machine start up, reformat HDFS
     $ ./start_hdfs.sh
     
 Load data onto HDFS
-    
+
     $ ./load_hdfs.sh
     
-
 ## 7. Write jobs
+1. Convert timestamp to 30 minute intervals
+2. Compute total volume for each time interval
+3. Compute average price for each time interval
+4. Write output to HDFS
+
+- Pig
+- Hive
+- Spark
 
 ## 8. Compare results and benchmark
