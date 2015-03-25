@@ -70,11 +70,11 @@ Add to ~/.bashrc
 
 On local machine start up, reformat HDFS
 
-    $ start_hdfs.sh
+    $ ./start_hdfs.sh
     
 Load data onto HDFS
     
-    $ load_hdfs.sh
+    $ ./load_hdfs.sh
     
 
 ## 7. Write jobs
