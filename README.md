@@ -4,11 +4,11 @@ The purpose of this exercise is to implement a map reduce job across both a Hado
 
 Tasks:
 
-1. [Install Hadoop 2.6](README.md#1-install-hadoop)
-2. [Install Pig 0.14](README.md#2-install-pig)
-3. [Install Hive 1.1.0](README.md#3-install-hive)
-4. [Install Spark 1.3.0](README.md#4-install-spark)
-5. [Add environment variables](README.md#5-add-environment)
+1. [Install Hadoop 2.6](README.md#1-install-hadoop-26)
+2. [Install Pig 0.14](README.md#2-install-pig-014)
+3. [Install Hive 1.1.0](README.md#3-install-hive-110)
+4. [Install Spark 1.3.0](README.md#4-install-spark-130)
+5. [Add environment variables](README.md#5-add-environment-variables)
 5. [Copy price data to Hadoop Data File System (HDFS)]
 6. [Write a Pig, Hive, and Spark job]
 7. [Write results back into HDFS]
