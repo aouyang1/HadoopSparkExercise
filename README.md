@@ -1,4 +1,4 @@
-# Hadoop and Spark Comparison
+# Hadoop and Spark Exercise
 
 Tasks:
 
@@ -26,7 +26,7 @@ Timestamp string format:
 
 The full dataset can be downloaded from [Google Drive](https://drive.google.com/folderview?id=0B9BcjDEfpflMfnFlUVQtSDIzT0FxbzNkSFF1OWptQkpQTVpfRlJnSU45VHY3X0hLdDQ0clE&usp=sharing)
 
-The task is to implement in the various frameworks the average price and total volume for each 30 minute increment. Output should look like the following:
+The task is to implement in the various frameworks the average price and total volume for each 30 minute interval. Output should look like the following:
 
 ![min30_output] (images/min30_output.png)
 
@@ -35,7 +35,7 @@ The task is to implement in the various frameworks the average price and total v
     $ wget http://mirror.nexcess.net/apache/hadoop/common/stable/hadoop-2.6.0.tar.gz
     $ tar -zxvf hadoop-2.6.0.tar.gz -C /usr/local
     
-After extraction, go to [Insight Hadoop dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/hadoop) to setup Hadoop and HDFS
+After extraction, go to [Insight Hadoop dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/hadoop) to complete the Hadoop and HDFS setup.
 
 ## 2. Install Pig 0.14
 
@@ -52,7 +52,7 @@ After extraction, go to [Insight Hadoop dev](https://sites.google.com/a/insightd
     $ wget http://www.apache.org/dyn/closer.cgi/spark/spark-1.3.0/spark-1.3.0-bin-hadoop2.4.tgz
     $ tar -zxvf spark-1.3.0-bin-hadoop2.4.tgz -C /usr/local
 
-Use the [Insight Spark dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/spark-dev) to complete setup
+Use the [Insight Spark dev](https://sites.google.com/a/insightdatascience.com/dataengineering/devsetups/spark-dev) to complete the setup.
 
 ## 5. Add environment variables
 Add to ~/.bashrc
