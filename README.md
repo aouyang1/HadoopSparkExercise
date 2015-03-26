@@ -103,6 +103,7 @@ project
 ```
 
 - Pig
+  - Write a .pig and .py script  
   - Use UDFs for string manipulations
   - Run with the following command:
     
@@ -112,6 +113,7 @@ project
 
 
 - Hive
+  - Write a .sql script  
   - Create a table
   - Use concat, substr, if for string manipulations
   - Run with the following command:
@@ -122,6 +124,7 @@ project
 
 
 - Spark
+  - Write a .scala file
   - Compile with sbt
     
     ```
