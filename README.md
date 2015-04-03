@@ -103,6 +103,7 @@ project
 ```
 
 - Pig
+  - Write a .pig and .py script  
   - Use UDFs for string manipulations
   - Run with the following command:
     
@@ -112,6 +113,7 @@ project
 
 
 - Hive
+  - Write a .sql script  
   - Create a table
   - Use concat, substr, if for string manipulations
   - Run with the following command:
@@ -122,6 +124,7 @@ project
 
 
 - Spark
+  - Write a .scala file
   - Compile with sbt
     
     ```
@@ -140,10 +143,10 @@ project
 
 Personal benchmark run locally on i7 with 8GB RAM and 250GB SSD
 
-|File Group        |File Size|Pig     |Hive    |Spark   |
-|:----------------:|:-------:|:------:|:------:|:------:|
-|price_data_snippet|1.7MB    |0m10.46s|0m11.12s|0m05.60s|
-|price_data_full   |670MB    |3m15.53s|1m20.77s|0m39.73s|
+|File Group        |File Size                    |Pig      |Hive     |Spark-core|Spark-Dataframe|
+|:----------------:|:---------------------------:|:-------:|:-------:|:--------:|:-------------:|
+|price_data_snippet|1.7MB                        |0m10.46s |0m11.12s |0m05.60s  |0m09.89s       |
+|price_data_full   |12.3GB (877MB replicated 13X)|60m32.80s|21m56.31s|9m37.70s  |5m31.34s       |
 
 Things to consider:
 - ease of implementation
