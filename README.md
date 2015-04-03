@@ -143,10 +143,10 @@ project
 
 Personal benchmark run locally on i7 with 8GB RAM and 250GB SSD
 
-|File Group        |File Size|Pig     |Hive    |Spark   |
-|:----------------:|:-------:|:------:|:------:|:------:|
-|price_data_snippet|1.7MB    |0m10.46s|0m11.12s|0m05.60s|
-|price_data_full   |670MB    |3m15.53s|1m20.77s|0m39.73s|
+|File Group        |File Size|Pig     |Hive    |Spark-core|Spark-Dataframe|
+|:----------------:|:-------:|:------:|:------:|:--------:|:-------------:|
+|price_data_snippet|1.7MB    |0m10.46s|0m11.12s|0m05.60s  |0m09.89s       |
+|price_data_full   |877MB    |4m51.80s|1m49.25s|1m04.81s  |0m48.76s       |
 
 Things to consider:
 - ease of implementation
